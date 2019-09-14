@@ -14,6 +14,6 @@ mysql_database_name
 
 mysql_database_dump
 
-# license
+## license
 
 [Unlicense](UNLICENSE.md)
