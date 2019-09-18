@@ -1,2 +1,4 @@
 ---
 - import_tasks: mysql.yml
+- include_tasks: import_db.yml
+  when: import_db_dump is defined and import_db_dump == 'true'
