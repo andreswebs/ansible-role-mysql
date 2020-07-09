@@ -115,6 +115,7 @@
     password: "{{ mysql_user_password }}"
     priv: "*.*:ALL"
     host: localhost
+  when: (mysql_database_user) and (mysql_database_user|length > 0)
   notify:
     - Restart MySQL
   tags:

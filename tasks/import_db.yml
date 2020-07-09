@@ -19,8 +19,9 @@
     login_host: localhost
     login_user: root
     login_password: "{{ mysql_root_password }}"
+  when: import_db_dump is defined and import_db_dump == 'true'
   notify:
-    - Restart MySQL        
+    - Restart MySQL
   tags:
     - mysql
     - import_db_dump
