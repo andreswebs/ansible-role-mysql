@@ -12,10 +12,6 @@ mysql_user_password
 
 mysql_database_name
 
-mysql_database_dump
-
-mysql_import_db_dump
-
 ## license
 
 [Unlicense](UNLICENSE.md)
